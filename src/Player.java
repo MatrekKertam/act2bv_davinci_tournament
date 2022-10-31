@@ -11,49 +11,44 @@ public class Player {
 
     // void -> String
     public String getName() {
-        return this.name;
+        return name;
     }
 
     //(String) -> void
     public void setName (String name) {
         this.name = name;
-        return;
     }
 
     // (void) -> String
     public String getPosition(){
-        return this.position;
+        return position;
     }
 
     // setter setPosition (String) -> void
     public void setPosition(String position){
         this.position = position;
-        return;
     }
 
     // getter getGoalCounter (void) -> int
     public int getGoalCounter(){
-        return this.goalCounter;
+        return goalCounter;
     }
 
     // setter setGoalCounter private
     private void setGoalCounter(int goalCounter){
         this.goalCounter = goalCounter;
-        return;
     }
 
     public void makeGoal() {
         return;
     }
 
-
     //getter team
     public Team getTeam() {
-        return this.team;
+        return team;
     }
     //setter team
     public void setTeam (Team team) {
         this.team = team;
-        return;
     }
 }

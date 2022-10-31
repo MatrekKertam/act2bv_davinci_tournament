@@ -36,7 +36,7 @@ public class Match {
     }
 
 
-    // settter location
+    // setter location
     public void setLocation(String location) {
         this.location = location;
     }
@@ -44,13 +44,12 @@ public class Match {
 
     //getter date
     public Date getDate(){
-        return this.date;
+        return date;
     }
 
     //setter setDate::  (Date) -> void
     public void setDate(Date date){
         this.date = date;
-        return;
     }
 
   /*public Date setDateAndGet(Date date) {
@@ -60,34 +59,32 @@ public class Match {
 
     //getter localTeam
     public Team getLocalTeam(){
-        return this.localTeam;
+        return localTeam;
     }
 
     //setter localTeam
     public void setLocalTeam(Team localTeam){
         this.localTeam = localTeam;
-        return;
     }
 
     // getter visitantTeam
     public Team getVisitantTeam(){
-        return this.visitantTeam;
+        return visitantTeam;
     }
 
     //setter visitantTeam
     public void setVisitantTeam(Team visitantTeam){
         this.visitantTeam = visitantTeam;
-        return;
     }
 
-    // get visitanTeamScore
+    // get visitantTeamScore
     public int getVisitantTeamScore(){
-        return this.visitantTeamScore;
+        return visitantTeamScore;
     }
 
     // get localTeamScore
     public int getLocalTeamScore(){
-        return this.localTeamScore;
+        return localTeamScore;
     }
 
     //incrementVisitantTeamScore:: void -> void

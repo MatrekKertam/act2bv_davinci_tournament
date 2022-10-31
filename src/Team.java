@@ -24,25 +24,23 @@ public class Team {
 
     //getter name
     public String getName (){
-        return this.name;
+        return name;
     }
 
     //getter players
     public ArrayList<Player> getPlayers(){
-        return this.players;
+        return players;
     }
 
     //setter players
     public void setPlayers (ArrayList<Player> players){
         this.players = players;
-        return;
     }
 
     //addPlayer:: (Player) -> void
     public void addPlayer (Player player) {
         this.players.add(player);
         player.setTeam(this);
-        return;
     }
 
     public void removePlayer (Player player){
@@ -51,7 +49,7 @@ public class Team {
 
     //getter goalCounter:: void -> int
     public int getGoalCounter() {
-        return this.goalCounter;
+        return goalCounter;
     }
 
     public void setGoalCounter(int goalCounter) {
@@ -61,8 +59,6 @@ public class Team {
     //incrementGoalCounter:: (void) -> void
     public void incrementGoalCounter() {
         //this.goalCounter = this.goalCounter + 1; //autoasignación
-        //this.goalCounter += 1;
         this.goalCounter++;
-        return;
     }
 }

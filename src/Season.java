@@ -25,11 +25,10 @@ public class Season{
 
     public void setName(String name){
         this.name = name;
-        return;
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
     public void setStartDate(Date startDate){
@@ -37,31 +36,29 @@ public class Season{
     }
 
     public Date getStartDate(){
-        return this.startDate;
+        return startDate;
     }
 
     public Date getEndDate(){
-        return this.endDate;
+        return endDate;
     }
 
     public void setEndDate (Date endDate){
         this.endDate = endDate;
-        return;
     }
 
     // este no lo entendí. No tendría que recibir un Match en vez de un date??
     public ArrayList<Match> getMatchsByDate(Date date){
-        return this.matchs;
+        return matchs;
     }
 
     public void addMatch(Match match){
         this.matchs.add(match);
-        return;
     }
 
 
     public ArrayList<Match> getMatchs() {
-        return this.matchs;
+        return matchs;
     }
 
     public void setMatchs(ArrayList<Match> matchs) {
