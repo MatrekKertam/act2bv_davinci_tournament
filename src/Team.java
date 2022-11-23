@@ -19,7 +19,6 @@ public class Team {
     //setter name
     public void setName (String name){
         this.name = name;
-        return;
     }
 
     //getter name
@@ -40,7 +39,7 @@ public class Team {
     //addPlayer:: (Player) -> void
     public void addPlayer (Player player) {
         this.players.add(player);
-        player.setTeam(this);
+        player.setTeam(this);//agrega el jugador al team: team.addPlayer(player)
     }
 
     public void removePlayer (Player player){

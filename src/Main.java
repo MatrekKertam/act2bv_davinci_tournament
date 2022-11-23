@@ -33,7 +33,6 @@ public class Main {
         estudiantes.addPlayer(new Player("Mariano Moreno"));
 
         //....
-
         Match primerParcial = new Match(
                 "Aula virtual de POO jueves",
                 fechaDeParcial,
@@ -42,14 +41,14 @@ public class Main {
         );
         torneoDaVinci.addMatch(primerParcial);
 
-        System.out.println(profes.getPlayers().size());
+        System.out.println("Cantidad de jugadores: " + profes.getPlayers().size());
         System.out.println(String.format("Cantidad de match: %d", torneoDaVinci.getMatchs().size()));
 
 
         ArrayList<Match> partidosDeHoy = torneoDaVinci.getMatchs();
 
         partidosDeHoy.get(0).getLocalTeam().incrementGoalCounter();
-        //partidosDeHoy.get(0).getLocalTeam().incrementGoalCounter();
+        partidosDeHoy.get(0).getLocalTeam().incrementGoalCounter();
         partidosDeHoy.get(0).getVisitantTeam().incrementGoalCounter();
 
 
