@@ -40,6 +40,7 @@ public class Team {
     public void addPlayer (Player player) {
         this.players.add(player);
         player.setTeam(this);//agrega el jugador al team: team.addPlayer(player)
+        return;
     }
 
     public void removePlayer (Player player){
